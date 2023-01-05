@@ -4,11 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XPE </title>
+    <title>XPE Calculadora</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Minha calculadora</h1>
+    </header>
+    <main>
+        <form onsubmit="calculate()">
+            <input type="number" name="firstNumber" id="firstNumber">
+            <input type="number" name="secondNumber" id="secondNumber">
+            <input type="submit" value="Calcular"
+        </form>
+        <section>
+            <div>
+                <p id="sumLabel">Soma</p>
+                <p id="sum"></p>
+            </div>
+            <div>
+                <p id="minusLabel">Subtração</p>
+                <p id="minus"></p>
+            </div>
+            <div>
+                <p id="multiplicationLabel">Multiplicação</p>
+                <p id="multiplication"></p>
+            </div>
+            <div>
+                <p id="divisionLabel">Divisão</p>
+                <p id="division"></p>
+            </div>
+            <div>
+                <p id="powerLabel">Potência</p>
+                <p id="power"></p>
+            </div>
+            <div>
+                <p id="squareRootLabel">Raiz</p>
+                <p id="squareRoot"></p>
+            </div>
+            <div>
+                <p id="percentageLabel">Porcentagem</p>
+                <p id="percentage"></p>
+            </div>
+            <div>
+                <p id="averageLabel">Média</p>
+                <p id="average"></p>
+            </div>
+        </section>
+    </main>
     
     <script src="app.js"></script>
 </body>
