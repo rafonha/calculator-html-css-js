@@ -10,48 +10,84 @@
 </head>
 <body>
     <header>
-        <h1>Minha calculadora</h1>
+        <h1>Super Calculadora</h1>
+        <div class="flex inputNumbers">
+            <label for="firstNumber">Primeiro número (A)</label><input type="number" name="firstNumber" id="firstNumber" value="3">
+            <label for="secondNumber">Segundo número (B)</label><input type="number" name="secondNumber" id="secondNumber" value="2">
+            <input type="submit" id="calculateButtom" value="Calcular" onclick="calculate()">
+        </div>
     </header>
     <main>
-        <form onsubmit="calculate()">
-            <input type="number" name="firstNumber" id="firstNumber">
-            <input type="number" name="secondNumber" id="secondNumber">
-            <input type="submit" value="Calcular"
-        </form>
-        <section>
-            <div>
+        <div class="flex">
+            <div class="calculus">
                 <p id="sumLabel">Soma</p>
-                <p id="sum"></p>
+                <p class="result" id="sum"></p>
             </div>
-            <div>
-                <p id="minusLabel">Subtração</p>
-                <p id="minus"></p>
+            <div class="calculus">
+                <p id="minusLabel">Subtração A - B</p>
+                <p class="result" id="minusA"></p>
             </div>
-            <div>
+            <div class="calculus">
+                <p id="minusLabel">Subtração B - A</p>
+                <p class="result" id="minusB"></p>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="calculus">
                 <p id="multiplicationLabel">Multiplicação</p>
-                <p id="multiplication"></p>
+                <p class="result" id="multiplication"></p>
             </div>
-            <div>
-                <p id="divisionLabel">Divisão</p>
-                <p id="division"></p>
+            <div class="calculus">
+                <p id="divisionLabel">Divisão A / B</p>
+                <p class="result" id="divisionA"></p>
             </div>
-            <div>
-                <p id="powerLabel">Potência</p>
-                <p id="power"></p>
+            <div class="calculus">
+                <p id="divisionLabel">Divisão B / A</p>
+                <p class="result" id="divisionB"></p>
             </div>
-            <div>
-                <p id="squareRootLabel">Raiz</p>
-                <p id="squareRoot"></p>
+        </div>
+        <div class="flex">
+            <div class="calculus">
+                <p id="powerLabel">Potência de A na base B</p>
+                <p class="result" id="powerA"></p>
             </div>
-            <div>
-                <p id="percentageLabel">Porcentagem</p>
-                <p id="percentage"></p>
+            <div class="calculus">
+                <p id="powerLabel">Potência de B na base A</p>
+                <p class="result" id="powerB"></p>
             </div>
-            <div>
+            <div class="calculus">
+                <p id="squareRootALabel">Raiz quadrada de A</p>
+                <p class="result" id="squareRootA"></p>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="calculus">
+                <p id="squareRootBLabel">Raiz quadrada de B</p>
+                <p class="result" id="squareRootB"></p>
+            </div>
+            <div class="calculus">
+                <p id="factorialBLabel">Fatorial de A</p>
+                <p class="result" id="factorialA"></p>
+            </div>
+            <div class="calculus">
+                <p id="factorialBLabel">Fatorial de B</p>
+                <p class="result" id="factorialB"></p>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="calculus">
+                <p id="percentageLabel">Porcentagem de A em relação a B</p>
+                <p class="result" id="percentageA"></p>
+            </div>
+            <div class="calculus">
+                <p id="percentageLabel">Porcentagem de B em relação A</p>
+                <p class="result" id="percentageB"></p>
+            </div>
+            <div class="calculus">
                 <p id="averageLabel">Média</p>
-                <p id="average"></p>
+                <p class="result" id="average"></p>
             </div>
-        </section>
+        </div>
     </main>
     
     <script src="app.js"></script>
